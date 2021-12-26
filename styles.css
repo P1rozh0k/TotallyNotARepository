@@ -10,12 +10,12 @@
     background-color: black;
     height: 50px;
     width: 200px;
+    margin: 0px;
 }
 
 
 
 .header {
-    /*display:flex;*/
     justify-content: space-between;
     background-color: black;
     padding: 0% 5%;
@@ -25,7 +25,6 @@
     margin-right: auto;
     margin-top: auto;
     flex-wrap: wrap;
-    /*align-items: center;*/
 }
 
 .pholi {
@@ -85,7 +84,6 @@
     text-align: center;
     background-image: none;
     background: url('https://132169.lp.tobiz.net/img/1920x0/image_12035.jpg');
-    margin-top: -100px;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -111,6 +109,7 @@
 }
 
 .title {
+    margin-top: 0px;
     padding-top: 10%;
     font-size: 20px;
     color: white;
@@ -165,32 +164,21 @@
 
 .headerwrap {
     background-color: black;
-    padding: 2%;
-    width: 100%;
-}
-.crop{
-    margin-top:80px;
+    padding: 15px 2%;
+    width: 96%;
+    min-height: 50px;
 }
 
 @media (max-width: 1000px) {
-    .leftpic{
-        margin-top: 5%;
-    }
     .img {
         margin-left: -300px !important;
         padding-left: 300px !important;
     }
-    .phone{
-    }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 970px) {
     .nash-list {
-        opacity: 0;
-        flex-wrap: nowrap;
-    }
-    .leftpic{
-        flex-wrap:wrap;
+        display: none;
     }
 }
 
@@ -200,20 +188,23 @@
     }
 
     .title {
-        padding-top: 40% !important;
+        padding-top: 30% !important;
     }
     .leftpic {
-        margin-left: 30%;
-        margin-top: 10%;
+        margin: auto;
+        float: none;
     }
     .phone {
-        opacity: 0;
+        display: none;
     }
-    .headerwrap{
-        height: 20%;
+    .img {
+        margin-left: -400px !important;
+        padding-left: 400px !important;
     }
 }
 
-@media (max-width: 520px) {
-    
+@media (max-width: 370px) {
+    .title{
+        font-size: 18px;
+    }
 }

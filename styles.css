@@ -2,6 +2,27 @@
     margin: 0;
 }
 
+
+/*.Burger_menu {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    display: none;
+}
+
+.Bmb {
+    float: left;
+    font-size: 50px;
+    color: white;
+    background-color: black;
+    border: 0px;
+    margin: 0px;
+}
+.Bmb:hover .Burger_menu{
+    display: block;
+}*/
+
 .leftpic {
     float: left;
     display: flex;
@@ -12,8 +33,6 @@
     width: 200px;
     margin: 0px;
 }
-
-
 
 .header {
     justify-content: space-between;
@@ -31,7 +50,9 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    align-items:center;
+    align-items: center;
+    /*width: 804px;
+    float: right;*/
 }
 
 .phone {
@@ -89,7 +110,6 @@
 
 }
 
-
 .noise {
     height: 100%;
     max-height: 820px;
@@ -110,7 +130,7 @@
 
 .title {
     margin-top: 0px;
-    padding-top: 10%;
+    padding-top: 15%;
     font-size: 20px;
     color: white;
     font-family: 'Montserrat';
@@ -139,6 +159,9 @@
     font-size: 24px;
     color: white;
     font-family: 'Montserrat';
+    width: 80%;
+    max-width: 950px;
+    margin: 1em auto;
 }
 
 .but1 {
@@ -164,21 +187,34 @@
 
 .headerwrap {
     background-color: black;
-    padding: 15px 2%;
+    padding: 10px 2%;
     width: 96%;
     min-height: 50px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1161px) {
+    .leftpic {
+        padding-top: 25px;
+    }
     .img {
-        margin-left: -300px !important;
-        padding-left: 300px !important;
+        height: 60%;
     }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1000px) {
+    .img {
+        margin-left: -250px !important;
+        padding-left: 250px !important;
+    }
+}
+
+@media (max-width: 990px) {
     .nash-list {
         display: none;
+    }
+
+    .leftpic {
+        padding-top: 0px;
     }
 }
 
@@ -186,7 +222,6 @@
     .mma {
         font-size: 40px !important;
     }
-
     .title {
         padding-top: 30% !important;
     }
@@ -195,16 +230,20 @@
         float: none;
     }
     .phone {
-        display: none;
+        margin: auto;
+        float: none;
     }
     .img {
-        margin-left: -400px !important;
-        padding-left: 400px !important;
+        margin-left: -300px !important;
+        padding-left: 300px !important;
+    }
+    .headerwrap {
+        padding: 15px 2%;
     }
 }
 
 @media (max-width: 370px) {
-    .title{
+    .title {
         font-size: 18px;
     }
 }

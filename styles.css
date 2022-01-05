@@ -225,20 +225,24 @@
     .title {
         padding-top: 30% !important;
     }
-    .leftpic {
-        margin: auto;
-        float: none;
-    }
-    .phone {
-        margin: auto;
-        float: none;
-    }
     .img {
         margin-left: -300px !important;
         padding-left: 300px !important;
     }
     .headerwrap {
         padding: 15px 2%;
+    }
+}
+
+@media (max-width: 440) {
+    .leftpic {
+        margin: auto;
+        float: none;
+    }
+
+    .phone {
+        margin: auto;
+        float: none;
     }
 }
 

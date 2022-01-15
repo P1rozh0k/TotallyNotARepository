@@ -193,6 +193,13 @@
             height: 0px;
         }
 
+.headerwrap {
+    background-color: black;
+    padding: 10px 2%;
+    width: 96%;
+    min-height: 60px;
+}
+
 .img {
     height: 100%;
     max-height: 820px;
@@ -225,7 +232,7 @@
 
 .title {
     margin-top: 0px;
-    padding-top: 15%;
+    padding-top: 13%;
     font-size: 20px;
     color: white;
     font-family: 'Montserrat';
@@ -240,6 +247,7 @@
     font-style: italic;
     color: white;
     margin: 0px;
+    text-transform: uppercase;
 }
 
 .mmaspan {
@@ -283,12 +291,48 @@
     color: #808080
 }
 
-.headerwrap {
-    background-color: black;
-    padding: 10px 2%;
-    width: 96%;
-    min-height: 60px;
+.club {
+    display: flex;
+    height: 85%;
+    max-height: 820px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0px auto;
 }
+
+.clubpic {
+    max-width: 450px;
+    max-height: 350px;
+    margin: 7% 3%;
+}
+
+.titleinfo {
+    text-transform: uppercase;
+    font-family: russo one;
+    font-size: 50px;
+    font-style: oblique;
+    margin-top: 7%;
+    height: 50px;
+    width: 100%;
+}
+    .titleinfo::after {
+        content: "--";
+        font-family: russo one;
+        font-size: 50px;
+        color: red;
+        letter-spacing: -0.078em;
+        margin: 0px 0.5em;
+    }
+
+    .titleinfo::before {
+        content: "--";
+        font-family: russo one;
+        font-size: 50px;
+        color: red;
+        letter-spacing: -0.078em;
+        margin: 0px 0.5em;
+    }
+
 
 .lock-scroll {
     overflow: hidden;

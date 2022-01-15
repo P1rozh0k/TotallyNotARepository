@@ -15,7 +15,7 @@
 
 <body>
     <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
+        <input id="menu__toggle" type="checkbox" onclick="lockScroll();" />
         <label class="menu__btn" for="menu__toggle">
             <span></span>
         </label>
@@ -77,7 +77,12 @@
                 <p class="ubt">Запишись на пробную тренировку. Свыше 200 участников по всей России</p>
             </div>
         </div>
-    </div>    
+    </div>   
+    <script>
+        function lockScroll() {
+            document.body.classList.toggle('lock-scroll');
+        }
+    </script>
 </body>
 
 </html>

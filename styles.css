@@ -8,40 +8,39 @@
     margin: 0;
     position: absolute;
     display: none;
-    width: 100%;
     height: 100%;
     top: 10px;
     left: 30px;
 }
 
-#menu__toggle {
+#hamburger-menu__toggle {
     opacity: 0;
 }
 
-    #menu__toggle:checked ~ .menu__btn > span {
+    #hamburger-menu__toggle:checked ~ .hamburger-menu__button > span {
         transform: rotate(45deg);
     }
 
-        #menu__toggle:checked ~ .menu__btn > span::before {
+        #hamburger-menu__toggle:checked ~ .hamburger-menu__button > span::before {
             top: 0;
             transform: rotate(0);
         }
 
-        #menu__toggle:checked ~ .menu__btn > span::after {
+        #hamburger-menu__toggle:checked ~ .hamburger-menu__button > span::after {
             top: 0;
             transform: rotate(90deg);
         }
 
-    #menu__toggle:checked ~ .menu__box {
+    #hamburger-menu__toggle:checked ~ .hamburger-menu__box {
         visibility: visible;
         left: 0;
     }
 
-    #menu__toggle:checked ~ .menu__btn {
+    #hamburger-menu__toggle:checked ~ .hamburger-menu__button {
         position: fixed;
     }
 
-.menu__btn {
+.hamburger-menu__button {
     display: flex;
     align-items: center;
     position: absolute;
@@ -53,9 +52,9 @@
     z-index: 1;
 }
 
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
+    .hamburger-menu__button > span,
+    .hamburger-menu__button > span::before,
+    .hamburger-menu__button > span::after {
         display: block;
         position: absolute;
         width: 100%;
@@ -64,17 +63,17 @@
         transition-duration: .25s;
     }
 
-        .menu__btn > span::before {
+        .hamburger-menu__button > span::before {
             content: '';
             top: -8px;
         }
 
-        .menu__btn > span::after {
+        .hamburger-menu__button > span::after {
             content: '';
             top: 8px;
         }
 
-.menu__box {
+.hamburger-menu__box {
     display: block;
     position: fixed;
     visibility: hidden;
@@ -86,11 +85,15 @@
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-color: black;
+    background-color: #242424;
     transition-duration: .25s;
 }
 
-.menu__item {
+.hamburger-menu__box_list {
+    padding: 0px;
+}
+
+.hamburger-menu__list_item {
     display: block;
     padding: 12px 24px;
     color: white;
@@ -100,29 +103,28 @@
     transition-duration: .25s;
 }
 
-    .menu__item:hover {
+    .hamburger-menu__list_item:hover {
         background-color: #CFD8DC;
     }
 
-.burgpic {
+.hamburger-menu__image_logo {
     height: 45px;
     width: 150px;
     padding-left: 24px;
 }
 
-.burgphone {
+.hamburger-menu__link_number {
     color: #333;
+    padding-left: 24px;
+    text-decoration: none;
 }
 
-.leftpic {
-    float: left;
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
+
+.header__wrap {
     background-color: #242424;
-    height: 62px;
-    width: 200px;
-    margin: 0px;
+    padding: 15px 2%;
+    width: 96%;
+    min-height: 60px;
 }
 
 .header {
@@ -137,7 +139,19 @@
     flex-wrap: wrap;
 }
 
-.pholi {
+
+.header__image_logo {
+    float: left;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    background-color: #242424;
+    height: 62px;
+    width: 200px;
+    margin: 0px;
+}
+
+.header__box_navigate {
     margin-top: 2px;
     display: flex;
     justify-content: flex-end;
@@ -148,13 +162,13 @@
     font-size: 18px;
 }
 
-.phone {
+.header__link_number {
     color: white;
     text-decoration: none;
     padding: 10px;
 }
 
-.nash-list {
+.header__list_menu {
     display: flex;
     list-style: none;
     justify-content: flex-end;
@@ -164,21 +178,21 @@
     flex-wrap: wrap;
 }
 
-    .nash-list li {
+    .header__list_menu li {
         padding: 5px;
         font-size: 18px;
     }
 
-        .nash-list li a {
+        .header__list_menu li a {
             text-decoration: none;
             color: white;
         }
 
-            .nash-list li a:hover {
+            .header__list_menu li a:hover {
                 text-decoration: underline;
             }
 
-        .nash-list li:before {
+        .header__list_menu li:before {
             content: '';
             display: inline-block;
             width: 4px;
@@ -188,20 +202,13 @@
             margin-bottom: 4px;
             margin-right: 5px;
         }
-        .nash-list li:first-child:before {
+        .header__list_menu li:first-child:before {
             content: '';
             width: 0px;
             height: 0px;
         }
 
-.headerwrap {
-    background-color: #242424;
-    padding: 15px 2%;
-    width: 96%;
-    min-height: 60px;
-}
-
-.img {
+.general-information__image_background {
     height: 100%;
     max-height: 820px;
     min-height: 668px;
@@ -210,18 +217,17 @@
     background: url('https://132169.lp.tobiz.net/img/1920x0/image_12035.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
-.noise {
+.general-information__image_noise {
     height: 100%;
     max-height: 820px;
     background-image: none;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAAXNSR0IArs4c6QAAADtJREFUKFNj/P//vxQDAcAIVSTJwMDwHItasDhMEUgeXSGcj6wI2SAUDbgUodiMrgir20hyE9G+wxlaADZhJdmjodzGAAAAAElFTkSuQmCC) repeat;
 }
 
-.main1 {
-    align-content:center;
+.general-information {
+    align-content: center;
     height: 100%;
     max-height: 820px;
     text-align: center;
@@ -231,7 +237,7 @@
     margin-right: auto;
 }
 
-.title {
+.general-information__p_title {
     margin-top: 0px;
     padding-top: 13%;
     font-size: 20px;
@@ -242,7 +248,7 @@
     text-align: center;
 }
 
-.mma {
+.general-information__p_mma {
     font-family: russo one;
     font-size: 72px;
     font-style: italic;
@@ -251,18 +257,18 @@
     text-transform: uppercase;
 }
 
-.mmaspan {
+.general-information__p_mmaspan {
     color: rgb(236, 33, 20);
 }
 
-.line {
+.general-information__p_line {
     color: white;
     font-size: 36px;
     font-family: Geneva, Verdana, sans-serif;
     margin-top: -20px;
 }
 
-.tra {
+.general-information__p_upper-button-information {
     font-size: 24px;
     color: white;
     font-family: 'Montserrat';
@@ -271,7 +277,7 @@
     margin: 1em auto;
 }
 
-.but1 {
+.general-information__button_subscribe {
     width: 90%;
     max-width: 300px;
     height: 60px;
@@ -282,32 +288,30 @@
     font-family: 'Montserrat';
 }
 
-    .but1:hover {
+    .general-information__button_subscribe:hover {
         margin-top: 2px;
         margin-bottom: -2px;
         background-color: rgb(200, 33, 20);
     }
 
-.ubt {
+.general-information__p_under-button-information {
     color: #808080
 }
 
-.club {
-    height: 63%;
-    max-height: 820px;
+.about-club {
     width: 90%;
     max-width: 1200px;
     margin: 0px auto;
 }
 
-.clubpic {
+.about-club__image_main {
     max-width: 450px;
     max-height: 350px;
     margin: 0% 3% 2% 3%;
     float: left;
 }
 
-.titleinfo {
+.about-club__p_title {
     text-transform: uppercase;
     font-family: russo one;
     font-size: 42px;
@@ -316,7 +320,7 @@
     margin-top: 10%;
     margin-bottom: 3%;
 }
-    .titleinfo::after {
+    .about-club__p_title::after {
         content: "--";
         font-family: russo one;
         font-size: 42px;
@@ -325,7 +329,7 @@
         margin: 0px 0.5em;
     }
 
-    .titleinfo::before {
+    .about-club__p_title::before {
         content: "--";
         font-family: russo one;
         font-size: 42px;
@@ -334,13 +338,13 @@
         margin: 0px 0.5em;
     }
 
-.info1 {
+.about-club__p_information-first {
     font-size: 18px;
     font-family: 'Roboto',sans-serif;
     margin-bottom: 3em;
 }
 
-.info2 {
+.about-club__p_information-second {
     font-size: 18px;
     font-family: 'Roboto',sans-serif;
 }
@@ -350,79 +354,75 @@
 }
 
 @media (max-width: 1132px) {
-    .leftpic {
+    .header__image_logo {
         padding-top: 15px;
     }
-    .img {
+    .general-information__image_background {
         height: 60%;
     }
-    .pholi {
+    .header__box_navigate {
         float: none;
     }
 }
 
 @media (max-width: 1015px) {
-    .titleinfo {
+    .about-club__p_title {
         font-size: 19px;
         margin-bottom: 0px;
     }
-    .titleinfo::after {
-        font-size: 19px;
-    }
-    .titleinfo::before {
-        font-size: 19px;
-    }
-    .clubpic {
+        .about-club__p_title::after {
+            font-size: 19px;
+        }
+        .about-club__p_title::before {
+            font-size: 19px;
+        }
+    .about-club__image_main {
         margin: 2% 3%;
     }
 }
 
 @media (max-width: 1000px) {
-    .img {
+    .general-information__image_background {
         margin-left: -250px;
         padding-left: 250px;
     }
 }
 
 @media (max-width: 990px) {
-    .nash-list {
+    .header__list_menu {
         display: none;
     }
-    .leftpic {
+    .header__image_logo {
         padding-top: 0px;
     }
-    .phone {
+    .header__link_number {
         padding-top: 22px;
     }
     .hamburger-menu {
         display: block;
     }
-    .leftpic {
+    .header__image_logo {
         margin-left: 50px;
     }
 }
 
 @media (max-width: 770px) {
-    .titleinfo {
+    .about-club__p_title {
         float: none;
     }
-    .info1 {
+    .about-club__p_information-first {
         float: none;
     }
-    .info2 {
+    .about-club__p_information-second {
         float: none;
     }
-    .clubpic {
+    .about-club__image_main {
         float: none;
         max-width: 90%;
         width: 90%;
         max-height: 100%;
         height: auto;
         margin: 10% 5% 1% 5%;
-    }
-    .club {
-        height: 100%;
-        max-height: 100%;
     }
 }
 
@@ -433,39 +433,39 @@
 }
 
 @media (max-width: 640px) {
-    .mma {
+    .general-information__p_mma {
         font-size: 40px;
     }
-    .title {
+    .general-information__p_title {
         padding-top: 30%;
     }
-    .img {
+    .general-information__image_background {
         margin-left: -300px;
         padding-left: 300px;
     }
-    .headerwrap {
+    .header__wrap {
         padding: 15px 2%;
     }
 
 }
 
 @media (max-width: 530px) {
-    .leftpic {
+    .header__image_logo {
         margin: auto;
         float: none;
         width: 150px;
         height: 45px;
     }
-    .phone {
+    .header__link_number {
         margin: auto;
         float: none;
         padding-top: 10px;
     }
-    .pholi {
+    .header__box_navigate {
         margin: auto;
         float: none;
     }
-    .menu__btn {
+    .hamburger-menu__button {
         top: 38px;
     }
     .header {
@@ -473,8 +473,8 @@
     }
 }
 
-@media (max-width: 370px) {
-    .title {
+@media (max-width: 404px) {
+    .general-information__p_title {
         font-size: 18px;
     }
 }

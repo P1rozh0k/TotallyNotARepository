@@ -89,11 +89,11 @@
     transition-duration: .25s;
 }
 
-.hamburger-menu__box_ul {
+.hamburger-menu__box_list {
     padding: 0px;
 }
 
-.hamburger-menu__ul_item {
+.hamburger-menu__list_item {
     display: block;
     padding: 12px 24px;
     color: white;
@@ -103,7 +103,7 @@
     transition-duration: .25s;
 }
 
-    .hamburger-menu__ul_item:hover {
+    .hamburger-menu__list_item:hover {
         background-color: #CFD8DC;
     }
 
@@ -168,7 +168,7 @@
     padding: 10px;
 }
 
-.header__ul_menu {
+.header__list_menu {
     display: flex;
     list-style: none;
     justify-content: flex-end;
@@ -178,21 +178,21 @@
     flex-wrap: wrap;
 }
 
-    .header__ul_menu li {
+    .header__list_menu li {
         padding: 5px;
         font-size: 18px;
     }
 
-        .header__ul_menu li a {
+        .header__list_menu li a {
             text-decoration: none;
             color: white;
         }
 
-            .header__ul_menu li a:hover {
+            .header__list_menu li a:hover {
                 text-decoration: underline;
             }
 
-        .header__ul_menu li:before {
+        .header__list_menu li:before {
             content: '';
             display: inline-block;
             width: 4px;
@@ -202,7 +202,7 @@
             margin-bottom: 4px;
             margin-right: 5px;
         }
-        .header__ul_menu li:first-child:before {
+        .header__list_menu li:first-child:before {
             content: '';
             width: 0px;
             height: 0px;
@@ -239,14 +239,13 @@
 
 .general-information__p_title {
     margin-top: 0px;
-    padding-top: 100px;
+    padding-top: 13%;
     font-size: 20px;
     color: white;
     font-family: 'Montserrat';
-    letter-spacing: 0.75em;
+    letter-spacing: 1em;
     text-transform: uppercase;
     text-align: center;
-    word-break: break-word;
 }
 
 .general-information__p_mma {
@@ -303,7 +302,6 @@
     width: 90%;
     max-width: 1200px;
     margin: 0px auto;
-    padding-bottom: 2em;
 }
 
 .about-club__image_main {
@@ -321,7 +319,6 @@
     height: 50px;
     margin-top: 10%;
     margin-bottom: 3%;
-    color: #333333;
 }
     .about-club__p_title::after {
         content: "--";
@@ -350,11 +347,8 @@
 .about-club__p_information-second {
     font-size: 18px;
     font-family: 'Roboto',sans-serif;
-    margin-bottom: 2em;
-    text-transform: none;
-    line-height: 1.5em;
-    color: #333333;
 }
+
 .lock-scroll {
     overflow: hidden;
 }
@@ -385,9 +379,6 @@
     .about-club__image_main {
         margin: 2% 3%;
     }
-    .club p {
-        font-size: 16px;
-    }
 }
 
 @media (max-width: 1000px) {
@@ -398,7 +389,7 @@
 }
 
 @media (max-width: 990px) {
-    .header__ul_menu {
+    .header__list_menu {
         display: none;
     }
     .header__image_logo {
@@ -418,23 +409,20 @@
 @media (max-width: 770px) {
     .about-club__p_title {
         float: none;
-        padding-top: 2em;
     }
     .about-club__p_information-first {
         float: none;
     }
     .about-club__p_information-second {
         float: none;
-        margin-top: 0px;
     }
     .about-club__image_main {
         float: none;
-        max-width: 100%;
-        width: auto;
+        max-width: 90%;
+        width: 90%;
         max-height: 100%;
         height: auto;
-        margin: 0px;
-        margin-top: 7%;
+        margin: 10% 5% 1% 5%;
     }
 }
 
@@ -482,12 +470,6 @@
     }
     .header {
         padding-left: 5%;
-    }
-    .tra {
-        font-size: 17px;
-    }
-    .title {
-        font-size: 26px;
     }
 }
 

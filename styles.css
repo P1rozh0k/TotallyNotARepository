@@ -285,6 +285,7 @@
     border: 0px;
     font-size: 20px;
     color: white;
+    cursor: pointer;
     font-family: 'Montserrat';
 }
 
@@ -352,6 +353,104 @@
 .lock-scroll {
     overflow: hidden;
 }
+
+.footer__wrapper {
+    background-color: #616161;
+    padding: 20px 0px;
+}
+
+.footer {
+    color: white;
+    background-color: #616161;
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.footer__wrap_justify {
+    display: flex;
+}
+
+.footer__image_logo {
+    height: 60px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.footer__information p {
+    margin: 0px;
+    font-size: 14px;
+}
+
+.footer__information_policy {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+    .footer__information_policy:hover {
+        border-bottom: none;
+    }
+
+.footer__social-media {
+    text-align: right;
+}
+
+.footer__social-media_number {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__social-media_free-russia {
+    font-size: 12px;
+}
+
+.footer__social-media_vk-icon-box {
+    height: 28px;
+    width: 28px;
+    background-color: #0006FF;
+    margin: 0px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer__social-media_instagram-icon-box {
+    height: 28px;
+    width: 28px;
+    margin: 0px;
+    display: inline-flex;
+    align-items: center;
+    background: #D500CE;
+    background: linear-gradient(to top right, #FFFF00, #FF0066, #D500CE);
+}
+
+.footer__social-media_whatsapp-icon-box {
+    height: 28px;
+    width: 28px;
+    background-color: #2EE600;
+    margin: 0px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer__social-media_youtube-icon-box {
+    height: 28px;
+    width: 28px;
+    background-color: #F50000;
+    margin: 0px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 18px;
+    margin: auto;
+}
+
+    .icon:hover {
+        font-size: 22px;
+    }
 
 @media (max-width: 1132px) {
     .header__image_logo {

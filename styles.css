@@ -357,6 +357,7 @@
 .footer__wrapper {
     background-color: #616161;
     padding: 20px 0px;
+    width: 100%;
 }
 
 .footer {
@@ -367,6 +368,7 @@
     margin: auto;
     justify-content: space-between;
     padding: 0px 20px;
+    height: 96px;
 }
 
 .footer__wrap_justify {
@@ -453,6 +455,7 @@
 
     .icon:hover {
         font-size: 22px;
+        cursor: pointer;
     }
 
 @media (max-width: 1132px) {
@@ -620,6 +623,7 @@
     }
     .footer {
         flex-direction: column ;
+        height: 150px;
     }
     .footer__image_logo {
         margin: auto;

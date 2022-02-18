@@ -366,6 +366,7 @@
     display: flex;
     margin: auto;
     justify-content: space-between;
+    padding: 0px 20px;
 }
 
 .footer__wrap_justify {
@@ -400,10 +401,12 @@
 .footer__social-media_number {
     color: white;
     text-decoration: none;
+    font-size: 22px;
 }
 
 .footer__social-media_free-russia {
     font-size: 12px;
+    word-wrap: break-word;
 }
 
 .footer__social-media_vk-icon-box {
@@ -505,6 +508,29 @@
     }
 }
 
+@media (max-width: 864px) {
+    .footer__social-media {
+        width: 140px;
+    }
+
+    .footer__social-media_number {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 810px) {
+    .footer__information {
+        width: 360px;
+    }
+}
+
+@media (max-width: 792px) {
+    .header {
+        padding-left: 38px;
+    }
+}
+
+
 @media (max-width: 770px) {
     .about-club__p_title {
         float: none;
@@ -523,11 +549,18 @@
         height: auto;
         margin: 10% 5% 1% 5%;
     }
+    .footer__information {
+        width: 265px;
+    }
 }
 
-@media (max-width: 792px) {
-    .header {
-        padding-left: 38px;
+@media (max-width: 666px) {
+    .footer__wrap_justify {
+        align-items: center;
+    }
+    .footer__image_logo {
+        height: 45px;
+        width: 150px;
     }
 }
 
@@ -546,6 +579,15 @@
         padding: 15px 2%;
     }
 
+}
+
+@media (max-width: 620px) {
+    .footer__information {
+        display: none;
+    }
+    .footer__social-media {
+        width: 190px;
+    }
 }
 
 @media (max-width: 530px) {
@@ -575,5 +617,16 @@
 @media (max-width: 404px) {
     .general-information__p_title {
         font-size: 18px;
+    }
+    .footer {
+        flex-direction: column ;
+    }
+    .footer__image_logo {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .footer__social-media {
+        margin: auto;
+        text-align: center;
     }
 }

@@ -304,6 +304,7 @@
     width: 90%;
     max-width: 1200px;
     margin: 0px auto;
+    margin-bottom: 20%
 }
 
 .about-club__image_main {
@@ -351,8 +352,99 @@
     font-family: 'Roboto',sans-serif;
 }
 
-.lock-scroll {
-    overflow: hidden;
+.directions__image_background {
+    height: 130%;
+    max-height: 920px;
+    background-image: none;
+    background: url('https://132169.lp.tobiz.net/img/1920x0/image_12048.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.directions__image_black {
+    height: 100%;
+    max-height: 920px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9)
+}
+
+.directions {
+    padding-top: 70px;
+    margin: auto;   
+}
+
+.directions__p_title {
+    color: white;
+    text-transform: uppercase;
+    font-family: russo one;
+    font-size: 42px;
+    font-style: oblique;
+    height: 50px;
+    margin: 0px;
+}
+
+    .directions__p_title::after {
+        content: "--";
+        font-family: russo one;
+        font-size: 42px;
+        color: red;
+        letter-spacing: -0.078em;
+        margin: 0px 0.5em;
+    }
+
+    .directions__p_title::before {
+        content: "--";
+        font-family: russo one;
+        font-size: 42px;
+        color: red;
+        letter-spacing: -0.078em;
+        margin: 0px 0.5em 0px 0px;
+    }
+
+.directions__p_trial {
+    font-size: 20px;
+    color: white;
+}
+
+.directions__image-box {
+    height: 65%;
+    max-height: 600px;
+    max-width: 400px;
+    background-image: none;
+    background: url('https://132169.lp.tobiz.net/img/600x900/dfd755664692b29d280f75f34bc98b03.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0;
+}
+
+.directions__image-box_darker {
+    height: 100%;
+    width: calc(100% - 45px);
+    background-image: none;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+    .directions__image-box_darker:hover {
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+.directions__image-box_title {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-top: 220px;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+
+.directions__image-box_free {
+    font-size: 18px;
+    color: white;
+    margin-left: 15px;
 }
 
 .footer__wrapper {
@@ -459,6 +551,16 @@
         cursor: pointer;
     }
 
+.lock-scroll {
+    overflow: hidden;
+}
+
+@media (min-width: 1170px) {
+    .about-club {
+        margin-bottom: 10%;
+    }
+}
+
 @media (max-width: 1132px) {
     .header__image_logo {
         padding-top: 15px;
@@ -468,6 +570,8 @@
     }
     .header__box_navigate {
         float: none;
+        align-items: flex-end;
+        flex-direction: column-reverse;
     }
 }
 

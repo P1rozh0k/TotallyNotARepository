@@ -266,6 +266,7 @@
     font-size: 36px;
     font-family: Geneva, Verdana, sans-serif;
     margin-top: -20px;
+    letter-spacing: -0.2px;
 }
 
 .general-information__p_upper-button-information {
@@ -285,6 +286,7 @@
     border: 0px;
     font-size: 20px;
     color: white;
+    cursor: pointer;
     font-family: 'Montserrat';
 }
 
@@ -353,6 +355,110 @@
     overflow: hidden;
 }
 
+.footer__wrapper {
+    background-color: #616161;
+    padding: 20px 0px;
+    width: 100%;
+}
+
+.footer {
+    color: white;
+    background-color: #616161;
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0px 20px;
+    height: 96px;
+}
+
+.footer__wrap_justify {
+    display: flex;
+}
+
+.footer__image_logo {
+    height: 60px;
+    width: 200px;
+    margin-right: 20px;
+}
+
+.footer__information p {
+    margin: 0px;
+    font-size: 14px;
+}
+
+.footer__information_policy {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+}
+
+    .footer__information_policy:hover {
+        border-bottom: none;
+    }
+
+.footer__social-media {
+    text-align: right;
+}
+
+.footer__social-media_number {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.footer__social-media_free-russia {
+    font-size: 12px;
+    word-wrap: break-word;
+}
+
+.footer__social-media_vk-icon-box {
+    height: 28px;
+    width: 28px;
+    background-color: #0006FF;
+    margin: 0px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer__social-media_instagram-icon-box {
+    height: 28px;
+    width: 28px;
+    margin: 0px;
+    display: inline-flex;
+    align-items: center;
+    background: #D500CE;
+    background: linear-gradient(to top right, #FFFF00, #FF0066, #D500CE);
+}
+
+.footer__social-media_whatsapp-icon-box {
+    height: 28px;
+    width: 28px;
+    background-color: #2EE600;
+    margin: 0px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer__social-media_youtube-icon-box {
+    height: 28px;
+    width: 28px;
+    background-color: #F50000;
+    margin: 0px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 18px;
+    margin: auto;
+}
+
+    .icon:hover {
+        font-size: 22px;
+        cursor: pointer;
+    }
+
 @media (max-width: 1132px) {
     .header__image_logo {
         padding-top: 15px;
@@ -406,6 +512,29 @@
     }
 }
 
+@media (max-width: 864px) {
+    .footer__social-media {
+        width: 140px;
+    }
+
+    .footer__social-media_number {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 810px) {
+    .footer__information {
+        width: 360px;
+    }
+}
+
+@media (max-width: 792px) {
+    .header {
+        padding-left: 38px;
+    }
+}
+
+
 @media (max-width: 770px) {
     .about-club__p_title {
         float: none;
@@ -424,11 +553,18 @@
         height: auto;
         margin: 10% 5% 1% 5%;
     }
+    .footer__information {
+        width: 265px;
+    }
 }
 
-@media (max-width: 792px) {
-    .header {
-        padding-left: 38px;
+@media (max-width: 666px) {
+    .footer__wrap_justify {
+        align-items: center;
+    }
+    .footer__image_logo {
+        height: 45px;
+        width: 150px;
     }
 }
 
@@ -447,6 +583,15 @@
         padding: 15px 2%;
     }
 
+}
+
+@media (max-width: 620px) {
+    .footer__information {
+        display: none;
+    }
+    .footer__social-media {
+        width: 190px;
+    }
 }
 
 @media (max-width: 530px) {
@@ -476,5 +621,17 @@
 @media (max-width: 404px) {
     .general-information__p_title {
         font-size: 18px;
+    }
+    .footer {
+        flex-direction: column ;
+        height: 150px;
+    }
+    .footer__image_logo {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .footer__social-media {
+        margin: auto;
+        text-align: center;
     }
 }

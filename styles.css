@@ -369,8 +369,14 @@
 }
 
 .directions {
+    padding: 70px;
     padding-top: 70px;
     margin: auto;   
+}
+
+.directions__div_container {
+    margin: auto;
+    max-width: 1191px;
 }
 
 .directions__p_title {
@@ -406,45 +412,62 @@
     color: white;
 }
 
-.directions__image-box {
-    height: 65%;
-    max-height: 600px;
-    max-width: 400px;
-    background-image: none;
-    background: url('https://132169.lp.tobiz.net/img/600x900/dfd755664692b29d280f75f34bc98b03.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin: 0;
+.directions__div_container-for-images {
+    display: flex;
+    flex-direction: row;
 }
 
-.directions__image-box_darker {
-    height: 100%;
-    width: calc(100% - 45px);
+.directions__image {
+    height: 560px;
+    width: 373px;
+    background-image: none;
+    margin: 12px;
+}
+
+.box_image {
+    background: url('https://132169.lp.tobiz.net/img/600x900/dfd755664692b29d280f75f34bc98b03.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.directions__image-darker {
+    height: 560px;
+    width: 373px;
     background-image: none;
     background: rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
-    
-    
 }
 
-    .directions__image-box_darker:hover {
+    .directions__image-darker:hover {
         background: rgba(0, 0, 0, 0.5);
     }
 
-.directions__image-box_title {
+.directions__image-title {
     font-size: 24px;
     color: white;
-    font-weight: bold;
+    font-weight: 900;
     margin-top: 220px;
     margin-bottom: 0px;
     margin-left: 15px;
 }
 
-.directions__image-box_free {
+.directions__image-free {
     font-size: 18px;
     color: white;
     margin-left: 15px;
+}
+
+.sambo_image {
+    background: url('https://132169.lp.tobiz.net/img/600x900/5bfbbc37ed6a86db4a6f21072aa9e540.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.cross-fit_image {
+    background: url('https://132169.lp.tobiz.net/img/600x900/781814b78e347b2e43d59c8edae930ab.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .footer__wrapper {
@@ -555,6 +578,42 @@
     overflow: hidden;
 }
 
+@media (max-width: 1331px) {
+    .directions__image_background {
+        max-height: 800px;
+    }
+    .directions__image {
+        height: 504px;
+        width: 336px;
+    }
+    .directions__image-darker {
+        height: 504px;
+        width: 336px;
+    }
+    .directions__div_container {
+        max-width: 1068px;
+    }
+}
+
+@media (max-width: 1208px) {
+    .directions__image_background {
+        max-height: 750px;
+    }
+    .directions__image {
+        height: 454px;
+        width: 303px;
+    }
+
+    .directions__image-darker {
+        height: 454px;
+        width: 303px;
+    }
+
+    .directions__div_container {
+        max-width: 969px;
+    }
+}
+
 @media (min-width: 1170px) {
     .about-club {
         margin-bottom: 10%;
@@ -591,6 +650,44 @@
     }
 }
 
+@media (max-width: 1109px) {
+    .directions__image_background {
+        max-height: 700px;
+    }
+    .directions__image {
+        height: 409px;
+        width: 273px;
+    }
+
+    .directions__image-darker {
+        height: 409px;
+        width: 273px;
+    }
+
+    .directions__div_container {
+        max-width: 879px;
+    }
+}
+
+@media (max-width: 1019px) {
+    .directions__image_background {
+        max-height: 670px;
+    }
+    .directions__image {
+        height: 368px;
+        width: 246px;
+    }
+
+    .directions__image-darker {
+        height: 368px;
+        width: 246px;
+    }
+
+    .directions__div_container {
+        max-width: 798px;
+    }
+}
+
 @media (max-width: 1000px) {
     .general-information__image_background {
         margin-left: -250px;
@@ -616,6 +713,26 @@
     }
 }
 
+@media (max-width: 938px) {
+    .directions__image_background {
+        max-height: 620px;
+    }
+
+    .directions__image {
+        height: 331px;
+        width: 221px;
+    }
+
+    .directions__image-darker {
+        height: 331px;
+        width: 221px;
+    }
+
+    .directions__div_container {
+        max-width: 723px;
+    }
+}
+
 @media (max-width: 864px) {
     .footer__social-media {
         width: 140px;
@@ -625,6 +742,27 @@
         font-size: 16px;
     }
 }
+
+@media (max-width: 863px) {
+    .directions__image_background {
+        max-height: 600px;
+    }
+
+    .directions__image {
+        height: 281px;
+        width: 188px;
+    }
+
+    .directions__image-darker {
+        height: 281px;
+        width: 188px;
+    }
+
+    .directions__div_container {
+        max-width: 624px;
+    }
+}
+
 
 @media (max-width: 810px) {
     .footer__information {

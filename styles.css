@@ -363,13 +363,13 @@
 
 .directions__image_black {
     height: 100%;
-    max-height: 920px;
+    max-height: 2000px;
     width: 100%;
     background: rgba(0, 0, 0, 0.9)
 }
 
 .directions {
-    padding: 70px;
+    padding: 70px 0px;
     padding-top: 70px;
     margin: auto;   
 }
@@ -417,6 +417,11 @@
     flex-direction: row;
 }
 
+.directions__div_table-row {
+    display: flex;
+    flex-direction: row;
+}
+
 .directions__image {
     height: 560px;
     width: 373px;
@@ -447,7 +452,7 @@
     font-size: 24px;
     color: white;
     font-weight: 900;
-    margin-top: 220px;
+    margin-top: 60%;
     margin-bottom: 0px;
     margin-left: 15px;
 }
@@ -582,23 +587,28 @@
     .directions__image_background {
         max-height: 800px;
     }
+
     .directions__image {
         height: 504px;
         width: 336px;
     }
+
     .directions__image-darker {
         height: 504px;
         width: 336px;
     }
+
     .directions__div_container {
         max-width: 1068px;
     }
+
 }
 
 @media (max-width: 1208px) {
     .directions__image_background {
         max-height: 750px;
     }
+
     .directions__image {
         height: 454px;
         width: 303px;
@@ -612,26 +622,31 @@
     .directions__div_container {
         max-width: 969px;
     }
+
 }
 
 @media (min-width: 1170px) {
     .about-club {
         margin-bottom: 10%;
     }
+
 }
 
 @media (max-width: 1132px) {
     .header__image_logo {
         padding-top: 15px;
     }
+
     .general-information__image_background {
         height: 60%;
     }
+
     .header__box_navigate {
         float: none;
         align-items: flex-end;
         flex-direction: column-reverse;
     }
+
 }
 
 @media (max-width: 1015px) {
@@ -639,21 +654,26 @@
         font-size: 19px;
         margin-bottom: 0px;
     }
+
         .about-club__p_title::after {
             font-size: 19px;
         }
+
         .about-club__p_title::before {
             font-size: 19px;
         }
+
     .about-club__image_main {
         margin: 2% 3%;
     }
+
 }
 
 @media (max-width: 1109px) {
     .directions__image_background {
         max-height: 700px;
     }
+
     .directions__image {
         height: 409px;
         width: 273px;
@@ -667,12 +687,14 @@
     .directions__div_container {
         max-width: 879px;
     }
+
 }
 
 @media (max-width: 1019px) {
     .directions__image_background {
         max-height: 670px;
     }
+
     .directions__image {
         height: 368px;
         width: 246px;
@@ -686,6 +708,7 @@
     .directions__div_container {
         max-width: 798px;
     }
+
 }
 
 @media (max-width: 1000px) {
@@ -693,24 +716,30 @@
         margin-left: -250px;
         padding-left: 250px;
     }
+
 }
 
 @media (max-width: 990px) {
     .header__list_menu {
         display: none;
     }
+
     .header__image_logo {
         padding-top: 0px;
     }
+
     .header__link_number {
         padding-top: 22px;
     }
+
     .hamburger-menu {
         display: block;
     }
+
     .header__image_logo {
         margin-left: 50px;
     }
+
 }
 
 @media (max-width: 938px) {
@@ -731,6 +760,7 @@
     .directions__div_container {
         max-width: 723px;
     }
+
 }
 
 @media (max-width: 864px) {
@@ -741,6 +771,7 @@
     .footer__social-media_number {
         font-size: 16px;
     }
+
 }
 
 @media (max-width: 863px) {
@@ -761,6 +792,7 @@
     .directions__div_container {
         max-width: 624px;
     }
+
 }
 
 
@@ -768,12 +800,14 @@
     .footer__information {
         width: 360px;
     }
+
 }
 
 @media (max-width: 792px) {
     .header {
         padding-left: 38px;
     }
+
 }
 
 
@@ -781,12 +815,15 @@
     .about-club__p_title {
         float: none;
     }
+
     .about-club__p_information-first {
         float: none;
     }
+
     .about-club__p_information-second {
         float: none;
     }
+
     .about-club__image_main {
         float: none;
         max-width: 90%;
@@ -795,34 +832,109 @@
         height: auto;
         margin: 10% 5% 1% 5%;
     }
+
     .footer__information {
         width: 265px;
     }
+
+}
+
+@media (max-width: 764px) {
+    .directions__div_table-row {
+        flex-direction: column;
+    }
+
+    .directions__image_background {
+        max-height: 1000px;
+    }
+
+    .directions__image {
+        height: 331px;
+        width: 221px;
+    }
+
+    .directions__image-darker {
+        height: 331px;
+        width: 221px;
+    }
+
+    .directions__div_container {
+        max-width: 490px;
+    }
+
 }
 
 @media (max-width: 666px) {
     .footer__wrap_justify {
         align-items: center;
     }
+
     .footer__image_logo {
         height: 45px;
         width: 150px;
     }
+
 }
 
 @media (max-width: 640px) {
     .general-information__p_mma {
         font-size: 40px;
     }
+
     .general-information__p_title {
         padding-top: 30%;
     }
+
     .general-information__image_background {
         margin-left: -300px;
         padding-left: 300px;
     }
+
     .header__wrap {
         padding: 15px 2%;
+    }
+
+}
+
+@media (max-width: 630px) {
+    .directions__div_container-for-images {
+        flex-direction: column;
+    }
+
+    .directions__div_table-row {
+        flex-direction: column;
+    }
+
+    .directions__image_background {
+        max-height: 2000px;
+        height: 1852px;
+        background-repeat: repeat;
+    }
+
+    .directions__p_title {
+        font-size: 32px;
+    }
+
+        .directions__p_title::after {
+            font-size: 30px;
+        }
+
+        .directions__p_title::before {
+            font-size: 30px;
+        }
+
+    .directions__image {
+        height: 504px;
+        width: 336px;
+    }
+
+    .directions__image-darker {
+        height: 504px;
+        width: 336px;
+    }
+
+    .directions__div_container {
+        max-width: 360px;
     }
 
 }
@@ -831,9 +943,11 @@
     .footer__information {
         display: none;
     }
+
     .footer__social-media {
         width: 190px;
     }
+
 }
 
 @media (max-width: 530px) {
@@ -843,37 +957,46 @@
         width: 150px;
         height: 45px;
     }
+
     .header__link_number {
         margin: auto;
         float: none;
         padding-top: 10px;
     }
+
     .header__box_navigate {
         margin: auto;
         float: none;
     }
+
     .hamburger-menu__button {
         top: 38px;
     }
+
     .header {
         padding-left: 5%;
     }
+
 }
 
 @media (max-width: 404px) {
     .general-information__p_title {
         font-size: 18px;
     }
+
     .footer {
         flex-direction: column ;
         height: 150px;
     }
+
     .footer__image_logo {
         margin: auto;
         margin-bottom: 20px;
     }
+
     .footer__social-media {
         margin: auto;
         text-align: center;
     }
+
 }
